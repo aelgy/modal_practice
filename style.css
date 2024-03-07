@@ -1,0 +1,65 @@
+.backgroundPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div .col-3 {
+  padding: 0px;
+}
+
+div .col-6 {
+  padding: 0px;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div .main {
+  background-color: #4F4F4F;
+  width: 80%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+hr.middle {
+  margin: 8px 0px;
+  height: 5px;
+  background-color: #8E8E8E;
+}
+
+div.typeRelease {
+  justify-content: center;
+}
+
+#releaseButton {
+  background-color: #8E8E8E;
+  padding: 6px 0px;
+  border: 0px;
+  width: 90%;
+  border-radius: 20px;
+}
+
+button.firstBtn {
+  background-color: #4F4F4F;
+  border-radius: 10px;
+  border-color: #4F4F4F;
+}
+
+button.firstBtn:hover {
+  background-color: #8E8E8E;
+  border-color: #4F4F4F;
+}
+
+button.firstBtn:active {
+  background-color: #8E8E8E;
+  border-color: #4F4F4F;
+}
+
+div.form-floating {
+  margin: 6px 0px;
+}

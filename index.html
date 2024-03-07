@@ -2,38 +2,86 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="https://glitch.com/favicon.ico" />
   <title>Bootstrap Modal Practice</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    發佈貼文
-  </button>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-3">
+        <img class="backgroundPhoto"
+          src="https://cdn.glitch.global/7d558248-9cd6-424b-ab38-8eb3459d587c/p1.png?v=1709760007958" />
+      </div>
+      <div class="col-6">
+        <!-- Button trigger modal -->
+        <div class="main">
+          <div class="row typeRelease">
+            <button type="button" id="releaseButton" class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              在想些什麼？
+            </button>
+          </div>
+          <hr class="middle" />
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary firstBtn">
+              直播視訊
+            </button>
+            <button type="button" class="btn btn-primary firstBtn">
+              相片／影片
+            </button>
+            <button type="button" class="btn btn-primary firstBtn">
+              感受／活動
+            </button>
+          </div>
+        </div>
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  建立貼文
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option value="1">所有人</option>
+                    <option value="2">朋友</option>
+                    <option value="3">摯友</option>
+                    <option value="4">朋友;除了...</option>
+                    <option value="5">特定朋友</option>
+                    <option value="6">只限本人</option>
+                  </select>
+                  <label for="floatingSelect">誰可以看到你的貼文</label>
+                </div>
+                <div class="form-floating">
+                  <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+                  <label for="floatingTextarea">在想什麼呢？</label>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">發佈</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+      </div>
+
+      <div class="col-3">
+        <img class="backgroundPhoto"
+          src="https://cdn.glitch.global/7d558248-9cd6-424b-ab38-8eb3459d587c/p2.png?v=1709760011464" />
       </div>
     </div>
   </div>
